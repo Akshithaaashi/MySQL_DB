@@ -74,3 +74,23 @@ where
 	name in ('SAHIL');
 
 select * from emp_payroll;     
+
+#Uc9 Extexd Employee Pay
+alter table emp_payroll 
+add basic_pay int, 
+add deductions int,
+add taxable_pay int  ,
+add tax int,
+add net_pay int;
+
+delete from emp_payroll where id in (1,2,3,4,5,6);
+
+insert into emp_payroll (name,department,gender,basic_pay
+,deductions,taxable_pay,tax,net_pay,start,salary) values
+	('Aishu','Marketing','F',3000000,1000000,
+    2000000,500000,1500000,'2021-07-08',751585235);
+    
+insert into emp_payroll (name,department,gender,basic_pay
+,deductions,taxable_pay,tax,net_pay,start,salary) values
+	('Akshitha','Sales','F',3000000,
+    0,0,0,0,'2021-06-01','97777');
