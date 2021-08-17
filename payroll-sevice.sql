@@ -20,3 +20,5 @@ insert into emp_payroll (name,salary, start) values
 ('Shubam',8750.0,'2021-01-17'),
 ('Sankar',6280.0,'2021-03-07'),
 ('SAHIL',2540.0,'2021-06-08');
+#uc4
+select * from emp_payroll;
