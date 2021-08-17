@@ -60,3 +60,17 @@ select avg(salary) from emp_payroll where gender='M' group by gender;
 select count(salary) from emp_payroll;
 select count(salary) from emp_payroll where gender='F' group by gender;
 select count(salary) from emp_payroll where gender='M' group by gender;
+
+#Uc8 Add department of employee
+alter table emp_payroll 
+add phone varchar(20), 
+add address varchar(200) default 'address1' ,
+add department varchar(20)  not null ;
+
+update emp_payroll 
+set 
+	department='Finance' 
+where
+	name in ('SAHIL');
+
+select * from emp_payroll;     
