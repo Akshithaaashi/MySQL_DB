@@ -22,3 +22,8 @@ insert into emp_payroll (name,salary, start) values
 ('SAHIL',2540.0,'2021-06-08');
 #uc4
 select * from emp_payroll;
+
+#UC5
+select salary from  emp_payroll where name='Sankar'; #Selecting Sankar entry
+#Selecting Employee from Date range
+select * from emp_payroll where start between cast('2021-03-07' as date) and date(now());
