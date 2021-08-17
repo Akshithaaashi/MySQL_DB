@@ -37,3 +37,26 @@ where name='Arjun' or name='Shubam'or name='Sankar' or name='SAHIL';
 update emp_payroll set gender='F'
 where name='Akshitha' or name='Aishu';
 select * from emp_payroll;
+
+#UC7-To find Aggregate values
+select salary from emp_payroll;
+#To find Aggregate Sum
+select sum(salary) from emp_payroll;
+select sum(salary) from emp_payroll where gender='F' group by gender;
+select sum(salary) from emp_payroll where gender='M' group by gender;
+#To find Maximum
+select max(salary) from emp_payroll;
+select max(salary) from emp_payroll where gender='F' group by gender;
+select max(salary) from emp_payroll where gender='M' group by gender;
+#To find Minimum
+select min(salary) from emp_payroll;
+select min(salary) from emp_payroll where gender='F' group by gender;
+select min(salary) from emp_payroll where gender='M' group by gender;
+#To find Aggregate Average
+select avg(salary) from emp_payroll;
+select avg(salary) from emp_payroll where gender='F' group by gender;
+select avg(salary) from emp_payroll where gender='M' group by gender;
+#To find Count
+select count(salary) from emp_payroll;
+select count(salary) from emp_payroll where gender='F' group by gender;
+select count(salary) from emp_payroll where gender='M' group by gender;
