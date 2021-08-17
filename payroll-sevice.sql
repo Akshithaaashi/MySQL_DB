@@ -27,3 +27,13 @@ select * from emp_payroll;
 select salary from  emp_payroll where name='Sankar'; #Selecting Sankar entry
 #Selecting Employee from Date range
 select * from emp_payroll where start between cast('2021-03-07' as date) and date(now());
+
+#UC6 - Addemp_payroll the Gender column in table and update to the name
+Alter table emp_payroll add gender char(1) after name;
+describe emp_payroll;
+SET SQL_SAFE_UPDATES=0;
+update emp_payroll set gender='M'
+where name='Arjun' or name='Shubam'or name='Sankar' or name='SAHIL';
+update emp_payroll set gender='F'
+where name='Akshitha' or name='Aishu';
+select * from emp_payroll;
