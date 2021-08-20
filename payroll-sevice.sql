@@ -94,3 +94,11 @@ insert into emp_payroll (name,department,gender,basic_pay
 ,deductions,taxable_pay,tax,net_pay,start,salary) values
 	('Akshitha','Sales','F',3000000,
     0,0,0,0,'2021-06-01','97777');
+    
+#UC10-To add two entities by same name in the Table
+insert into emp_payroll (name,gender,start,department,basic_pay,deductions,taxable_pay,tax,net_pay,salary)
+values('Terisa','F','2018-07-08','Marketing',300000,100000,200000,500000,1000000,546438664);
+select * from emp_payroll;
+insert into emp_payroll (name,gender,start,department,basic_pay,deductions,taxable_pay,tax,net_pay,salary)
+values('Terisa','F','2018-01-06','Sales',300000,0,0,0,0,0);
+select * from emp_payroll;
